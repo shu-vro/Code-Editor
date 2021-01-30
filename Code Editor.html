@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="keywords" content="Document" />
+        <meta name="description" content="Your Description..." />
+        <title>Document</title>
+        <link rel="stylesheet" href="resources/css/style.css" />
+        <link
+            rel="shortcut icon"
+            href="resources/img/favicon.ico"
+            type="image/x-icon"
+        />
+        <style></style>
+    </head>
+    <body>
+        <div class="code_area">
+            <code id="html" contenteditable="true" onkeyup="showPreview()">
+                <div>&lt;!--  HTML --&gt;</div>
+            </code>
+            <code id="css" contenteditable="true" onkeyup="showPreview()">
+                <div>body {</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;margin: 0;</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;padding: 0;</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;box-sizing: border-box;</div>
+                <div>}</div>
+            </code>
+            <code id="js" contenteditable="true" onkeyup="showPreview()">
+                <div>(function() {</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;let variable = document.querySelector("element");</div>
+                <div>}())</div>
+            </code>
+            <div class="button_area">
+                <button onclick="copy()">Copy</button>
+                <button>Raw</button>
+                <button onclick="external()">External</button>
+            </div>
+        </div>
+        <div class="preview_area">
+            <iframe id="preview_window" frameborder="0"></iframe>
+        </div>
+        <div class="copyPreview">Copied!</div>
+        <script src="resources/js/main.js"></script>
+    </body>
+</html>
